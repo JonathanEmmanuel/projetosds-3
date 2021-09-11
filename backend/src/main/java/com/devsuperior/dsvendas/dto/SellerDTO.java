@@ -1,10 +1,7 @@
 package com.devsuperior.dsvendas.dto;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
-import com.devsuperior.dsvendas.entities.Sale;
 import com.devsuperior.dsvendas.entities.Seller;
 
 public class SellerDTO  implements Serializable{
@@ -14,9 +11,7 @@ public class SellerDTO  implements Serializable{
 	private Long id;
 	
 	private String name;
-	
-	private List<Sale> sales = new ArrayList<>();
-	
+		
 	public SellerDTO() {}
 
 	public SellerDTO(Long id, String name) {
@@ -43,9 +38,5 @@ public class SellerDTO  implements Serializable{
 
 	public void setName(String name) {
 		this.name = name;
-	}
-	
-	public List<Sale> getSales() {
-		return sales;
 	}
 }
